@@ -1,0 +1,41 @@
+.btnRetour{
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #dadada;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    }
+    .btnRetour:hover{
+        cursor: pointer;
+        border: 2px solid #9ecaed;
+        box-shadow: 0 0 35px #9ecaed;
+    }
+    .btnRetour:focus{
+        cursor: pointer;
+        border: 2px solid #9ecaed;
+        box-shadow: 0 0 35px #9ecaed;
+    }
+    .divRetour{
+        margin: 20px;
+        margin-top:0px;
+        display: inline-block;
+        position:absolute;
+
+    }
+    .navbar-text{
+        padding: 0;
+    }
+    .navbar{
+        padding: 0;
+        
+    }
+    .display-7{
+        font-size:1.4rem;
+    }
+
+    .bg-light {
+        --bs-bg-opacity: 0;
+        background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    }

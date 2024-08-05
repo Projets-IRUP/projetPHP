@@ -1,0 +1,437 @@
+
+.lienArbo:hover{
+	color: #0039f2;
+	
+}
+
+table th , table td{
+	text-align: center;
+  }
+  table th{
+	background-color: #ffffff
+  }
+  
+   tr:nth-child(even){
+	background-color: rgb(237, 237, 237);
+  }
+  tr{
+	  background-color: white;
+	}
+  /* 
+  table tr:nth-child(even):hover{
+	background-color: blueviolet;
+	color: #ffffff;
+  }  */
+  
+  table tr:hover{
+	  background-color: #3f83e7;
+	  color: #ffffff;
+  }
+  
+  .pagination li:hover{
+	cursor: pointer;
+  }
+  
+		  /* unvisited link */
+		a:link {
+		  color: #000000;
+		  text-decoration-style: none;
+		text-decoration: none; 
+		  
+	  
+		}
+		/* visited link */
+		a:visited {
+		  color: #000000;
+		  text-decoration-style: none;
+	  
+		}
+	  
+		/* mouse over link */
+		a:hover {
+		  color: rgb(255, 255, 255);
+		  
+		  text-decoration-style: none;
+		}
+	  
+		/* selected link */
+		a:active {
+		  color: #000000;
+		  text-decoration-style: none;
+		}
+  
+		@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+  
+  * {
+	  margin: 0;
+	  padding: 0;
+	  font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+	  min-height: 100vh;
+	  width: 100%;
+	  overflow-x: hidden;
+  }
+  
+  #card .row {
+	  padding: 30px 0;
+  }
+  
+  #card .gr-1 {
+	  background: linear-gradient(170deg, #65ced3 0%, #1d3ede 100%);
+  }
+  
+  #card * {
+	  transition: 0.5s;
+  }
+  
+  #card .h-100 {
+	  height: 100vh !important;
+  }
+  
+  #card .align-middle {
+	  position: relative;
+	  transform: translateY(-50%);
+  }
+  
+  #card .column {
+	  margin-top: 3rem;
+	  padding-left: 3rem;
+  }
+  
+  #card .column:hover {
+	  padding-left: 0;
+  }
+  
+  #card .column:hover .card .txt {
+	  margin-left: 1rem;
+  }
+  
+  #card .column:hover .card .txt h1,
+  .column:hover .card .txt p {
+	  color: rgba(255, 255, 255, 1);
+	  opacity: 1;
+  }
+  
+  #card .column:hover a {
+	  color: rgba(255, 255, 255, 1);
+  }
+  
+  #card .column:hover a:after {
+	  width: 10%;
+  }
+  
+  #card .card {
+	  min-height: 170px;
+	  margin: 0;
+	  padding: 1.7rem 1.2rem;
+	  border: none;
+	  color: rgba(0, 0, 0, 1);
+	  letter-spacing: 0.05rem;
+	  font-family: '
+  Oswald'
+  , sans-serif;
+	  box-shadow: 0 0 21px rgba(0, 0, 0, .27);
+	  border-radius: 20px;
+  }
+  
+  #card .card .txt {
+	  margin-left: -3rem;
+	  z-index: 1;
+  }
+  
+  #card .card .txt h1 {
+	  font-size: 1.5rem;
+	  font-weight: 300;
+	  text-transform: uppercase;
+  }
+  
+  #card .card .txt p {
+	  font-size: 0.7rem;
+	  font-family: '
+  Open Sans'
+  , sans-serif;
+	  letter-spacing: 0rem;
+	  margin-top: 33px;
+	  opacity: 0;
+	  color: rgba(255, 255, 255, 1);
+  }
+  
+  #card .card a {
+	  z-index: 3;
+	  font-size: 0.7rem;
+	  color: rgba(0, 0, 0, 1);
+	  margin-left: 1rem;
+	  position: relative;
+	  bottom: -0.5rem;
+	  text-transform: uppercase;
+  }
+  
+  #card .card a:after {
+	  content: "
+  "
+  ;
+	  display: inline-block;
+	  height: 0.5em;
+	  width: 0;
+	  margin-right: -100%;
+	  margin-left: 10px;
+	  border-top: 1px solid rgba(255, 255, 255, 1);
+	  transition: 0.5s;
+  }
+  
+  #card .card .ico-card {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  width: 100%;
+	  height: 100%;
+	  overflow: hidden;
+  }
+  
+  #card .card i {
+	  position: relative;
+	  right: -50%;
+	  top: 60%;
+	  font-size: 12rem;
+	  line-height: 0;
+	  opacity: 0.2;
+	  color: rgba(255, 255, 255, 1);
+	  z-index: 0;
+  }
+  
+  #card a {
+	  text-decoration: none;
+  }
+  
+  #buttonAdmin.action {
+	  position: fixed;
+	  bottom: 50px;
+	  left: 50px;
+	  width: 50px;
+	  height: 50px;
+	  background:#3f83e7;
+	  border-radius: 50%;
+	  cursor: pointer;
+	  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+	  z-index: 2;
+  }
+  
+  #buttonAdmin.action span {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  color: #ffffff;
+	  font-size: 2em;
+	  transition: .3s ease-in-out;
+  }
+  
+  #buttonAdmin.action.active span {
+	  transform: rotate(135deg);
+  }
+  
+  #buttonAdmin.action ul {
+	  position: absolute;
+	  bottom: 55px;
+	  background: #3f83e7;
+	  color: #ffffff;
+	  min-width: 300px;
+	  padding: 20px;
+	  border-radius: 20px;
+	  opacity: 0;
+	  visibility: hidden;
+	  transition: .3s;
+	  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #buttonAdmin.action.active ul {
+	  bottom: 65px;
+	  opacity: 1;
+	  visibility: visible;
+	  transition: .3s;
+	  z-index: 2;
+  }
+  
+  #buttonAdmin.action ul li {
+	  list-style: none;
+	  text-decoration: none;
+	  display: flex;
+	  justify-content: flex-start;
+	  align-items: center;
+	  padding: 7px 0;
+  }
+  
+  #buttonAdmin.action ul li i {
+	  margin-right: 20px;
+  }
+  
+  #buttonAdmin.action ul li:hover {
+	  font-weight: 600;
+  }
+  
+  #buttonAdmin.action ul li:not(:last-child) {
+	  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  #buttonAdmin.action ul li img {
+	  margin-right: 15px;
+	  opacity: .2;
+	  transform: scale(.7);
+  }
+  
+  #buttonAdmin.action ul li:hover img {
+	  opacity: .8;
+	  transform: scale(1.0);
+  }
+  
+  .select {
+	  display: grid;
+	  grid-template-columns: repeat(3, 1fr);
+	  max-width: 300px;
+	  gap: 1px;
+	  margin-top: 10px;
+  }
+  
+  .select__item {
+	  padding: 10px;
+	  cursor: pointer;
+	  font-family: "Heebo", sans-serif;
+	  text-align: center;
+	  border-radius: 3px;
+	  background: #eeeeee;
+	  transition: background 0.1s;
+  }
+  
+  .select__item--selected {
+	  background: blueviolet;
+	  color: #ffffff;
+  }
+  
+  .erreurForm {
+	  text-align: center;
+	  color: red;
+  }
+  
+  
+  /* MODALE */
+  #ModalUpdateService .container {
+	  width: 100%;
+	  margin: 5px 0;
+  }
+  
+  
+  #ModalUpdateService ul {
+	  list-style-type: none;
+  }
+  
+  #ModalUpdateService a {
+	  color: #b63b4d;
+	  text-decoration: none;
+  }
+  
+  #ModalUpdateService ol,
+  #ModalUpdateService ul {
+	  padding-left: unset !important;
+  }
+  
+  
+  #ModalUpdateService .accordion {
+	  width: 100%;
+	  max-width: 100%;
+	  /* margin: 30px auto 20px; */
+	  background: #FFF;
+	  -webkit-border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  border-radius: 0px;
+  }
+  
+  #ModalUpdateService .accordion .link {
+	  cursor: pointer;
+	  display: block;
+	  padding: 15px 15px 15px 42px;
+	  color: #4D4D4D;
+	  font-size: 14px;
+	  font-weight: 700;
+	  border-bottom: 1px solid #CCC;
+	  position: relative;
+	  -webkit-transition: all 0.4s ease;
+	  -o-transition: all 0.4s ease;
+	  transition: all 0.4s ease;
+  }
+  
+  #ModalUpdateService label {
+	  color: rgb(0, 0, 0);
+  }
+  
+  #ModalUpdateService .accordion li:last-child .link {
+	  border-bottom: 0;
+  }
+  
+  #ModalUpdateService .accordion li i {
+	  position: absolute;
+	  top: 16px;
+	  left: 12px;
+	  font-size: 18px;
+	  color: #595959;
+	  -webkit-transition: all 0.4s ease;
+	  -o-transition: all 0.4s ease;
+	  transition: all 0.4s ease;
+  }
+  
+  #ModalUpdateService .accordion li i.fa-chevron-down {
+	  right: 12px;
+	  left: auto;
+	  font-size: 16px;
+  }
+  
+  #ModalUpdateService .accordion li.open .link {
+	  color: #000000;
+  }
+  
+  #ModalUpdateService .accordion li.open i {
+	  color: #000000;
+  }
+  
+  #ModalUpdateService .accordion li.open i.fa-chevron-down {
+	  -webkit-transform: rotate(180deg);
+	  -ms-transform: rotate(180deg);
+	  -o-transform: rotate(180deg);
+	  transform: rotate(180deg);
+  }
+  
+  
+  #ModalUpdateService .submenu {
+	  display: none;
+	  font-size: 14px;
+  }
+  
+  #ModalUpdateService .submenu li {
+	  border-bottom: 1px solid blueviolet;
+  }
+  
+  #ModalUpdateService .submenu a {
+	  display: block;
+	  text-decoration: none;
+	  color: #d9d9d9;
+	  padding: 12px;
+	  padding-left: 42px;
+	  -webkit-transition: all 0.25s ease;
+	  -o-transition: all 0.25s ease;
+	  transition: all 0.25s ease;
+  }
+  
+  #ModalUpdateService .submenu a:hover {
+	  background: #b63b4d;
+	  color: #FFF;
+  }
+  
+  
+  
+  

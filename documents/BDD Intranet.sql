@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : jeu. 27 juin 2024 à 12:27
+-- Généré le : lun. 05 août 2024 à 12:38
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.1.13
 
@@ -40,7 +40,6 @@ CREATE TABLE IF NOT EXISTS `dossier` (
 --
 -- Déchargement des données de la table `dossier`
 --
-
 
 
 -- --------------------------------------------------------
@@ -141,8 +140,6 @@ CREATE TABLE IF NOT EXISTS `service` (
 --
 
 
-
-
 -- --------------------------------------------------------
 
 --
@@ -163,8 +160,6 @@ CREATE TABLE IF NOT EXISTS `sous_dossier` (
 -- Déchargement des données de la table `sous_dossier`
 --
 
-INSERT INTO `sous_dossier` (`id_sousdossier`, `id_dossier`, `libelle`, `image`) VALUES
-(1, 1, 'sous-dossier 1', NULL),
 
 
 -- --------------------------------------------------------
@@ -190,7 +185,8 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
 --
 
 INSERT INTO `utilisateur` (`id_utilisateur`, `nom`, `prenom`, `identifiant`, `motdepasse`, `admin`) VALUES
-(15, 'Barriol', 'Anthony', 'abarriol', '9f4e1a91ec7181616a04e53aa916672a', 1),
+(1, 'Barriol', 'Anthony', 'anthonyb', MD5('oketooketo'), 1),
+
 
 --
 -- Contraintes pour les tables déchargées

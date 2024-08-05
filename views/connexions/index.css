@@ -1,0 +1,40 @@
+body{
+    background:#cfcfcf;
+}
+.connexion .panel-default{
+    padding: 31%;
+    margin-top: -27%;
+}
+.connexion .panel-body{
+    padding: 15%;
+    margin-bottom: -50%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img{
+    width:40%;
+    margin-bottom:10%;
+}
+.btn{
+    background: #1C2562;
+    border:none;
+    width:75%;
+    font-size:1vw;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+.erreur {
+    color: red;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 1vw;
+}
