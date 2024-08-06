@@ -79,7 +79,7 @@ class sous_dossiers extends controller {
                 //test inutile normalement car id unique autoincrement
                 if(!file_exists( $cheminNouveauDossier)){
                     if(mkdir( $cheminNouveauDossier)){
-                        $this->Session->setFlash("Le sous-dossier a été créer avec succès.", "success");
+                        $this->Session->setFlash("Le sous-dossier a été créé avec succès.", "success");
                     }else{
                         $this->Session->setFlash("Impossible de créer le sous-dossier.", "danger"); 
                     }

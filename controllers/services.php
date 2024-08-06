@@ -48,7 +48,7 @@ class services extends controller {
                 if(!file_exists( $cheminNouveauDossier)){
                     echo $cheminNouveauDossier;
                     if(mkdir( $cheminNouveauDossier)){
-                        $this->Session->setFlash("Le service a été créer avec succès.", "success");
+                        $this->Session->setFlash("Le service a été créé avec succès.", "success");
                     }else{
                         $this->Session->setFlash("Impossible de créer le service.", "danger"); 
                     }
